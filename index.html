@@ -2,40 +2,219 @@
 <html lang="ja">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="stylesheet" href="./style.css" />
-		<title>森田の自己紹介</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Shogo's profile</title>
 	</head>
 	<body>
-		<div id="top">
-      <div >
-			<h1>森田尚吾</h1>
-      <ul class="top_socials">
-        <li class="top_social">
-          <a href="https://twitter.com/yuzutech11" target="_brank">
-            <img src="./images/top/x.pn g" alt="Twitter" loading="lazy">
-          </a>
-        </li>
-        <li class="top_social">
-          <a href="https://www.youtube.com/channel/UCdcOsfdctx1e9D_TDVMXSRQ" target="_brank">
-            <img src="./images/top/youtube.pn g" alt="Youtube" loading="lazy">
-          </a>
-        </li>
-        <li class="top_social">
-          <a href="https://github.com/shoto-11" target="_brank">
-            <img src="./images/top/github.pn g" alt="github" loading="lazy">
-          </a>
-        </li>
-      </ul>
-		</div>
-		<div id="profile">
-		</div>
-		<div id="pr">
-		</div>
-		<div id="exp">
-		</div>
-		<div id="works">
-		</div>
-		<div id="contact">
-		</div>
+		<header class="header" style="top: 845.453px; left: 0px">
+			<div class="header_innner">
+				<ul class="headerNavLists">
+					<li class="headerNavLists_item">
+						<a href="#top">
+							<span class="headerNavLists_text">TOP</span>
+						</a>
+						/
+					</li>
+					<li class="headerNavLists_item">
+						<a href="#profile">
+							<span class="headerNavLists_text">PROFILE</span>
+						</a>
+						/
+					</li>
+					<li class="headerNavLists_item">
+						<a href="#pr">
+							<span class="headerNavLists_text">PR</span>
+						</a>
+						/
+					</li>
+					<li class="headerNavLists_item">
+						<a href="#exp">
+							<span class="headerNavLists_text">EXP</span>
+						</a>
+						/
+					</li>
+					<li class="headerNavLists_item">
+						<a href="#works">
+							<span class="headerNavLists_text">WORKS</span>
+						</a>
+						/
+					</li>
+					<li class="headerNavLists_item">
+						<a href="#contact">
+							<span class="headerNavLists_text">CONTACT</span>
+						</a>
+						/
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main class="fullwrap">
+			<section id="top">
+				<section class="top_info">
+					<h1 class="top_name">森田尚吾</h1>
+					<div class="top_data">
+						東京工業大学<br />
+						情報理工学院 情報工学系 学士2年<br />
+					</div>
+					<ul class="top_socials">
+						<li class="top_social">
+							<a href="https://twitter.com/yuzutech11" target="_brank">
+								<img src="./img/top/x.png" alt="Twitter" loading="lazy" />
+							</a>
+						</li>
+						<li class="top_social">
+							<a
+								href="https://www.youtube.com/channel/UCdcOsfdctx1e9D_TDVMXSRQ"
+								target="_brank"
+							>
+								<img src="./img/top/youtube.png" alt="Youtube" loading="lazy" />
+							</a>
+						</li>
+						<li class="top_social">
+							<a href="https://github.com/shoto-11" target="_brank">
+								<img src="./img/top/github.png" alt="github" loading="lazy" />
+							</a>
+						</li>
+					</ul>
+				</section>
+				<div class="top_img">
+					<img src="./img/top/myicon.png" alt="myicon" loading="lazy" />
+				</div>
+			</section>
+			<section id="profile">
+				<h2 class="profile_title">PROFILE</h2>
+				<div class="profile_content">
+					<! –ここに右下の画像を入れる
+          @media only screen and (min-width: 1281px) {
+            .o-profileData__content {
+                background-image:url(../images/top/bg_miko_01.png);
+                background-position: bottom right;
+                background-repeat: no-repeat;
+                background-size: clamp(189px, 25vw, 589px) auto
+            }
+        } ->
+					<div class="profile_content_rows">
+						<div class="profile_content_data">
+							<dl class="profile_content_definition">
+								<! -プロフィールのリスト ->
+								<dt class="profile_content_title">
+									<! - 定義名 身長、誕生日など->
+									名前
+								</dt>
+								<dd class="profile_content_detail">
+									<! - 定義内容　100cm、8月など ->
+									森田尚吾
+								</dd>
+							</dl>
+							<dl class="profile_content_definition">
+								<! -プロフィールのリスト ->
+								<dt class="profile_content_title">
+									<! - 定義名 身長、誕生日など->
+									誕生日
+								</dt>
+								<dd class="profile_content_detail">
+									<! - 定義内容　100cm、8月など ->
+									8月15日
+								</dd>
+							</dl>
+							<dl class="profile_content_definition">
+								<! -プロフィールのリスト ->
+								<dt class="profile_content_title">
+									<! - 定義名 身長、誕生日など->
+									年齢
+								</dt>
+								<dd class="profile_content_detail">
+									<! - 定義内容　100cm、8月など ->
+									20
+								</dd>
+							</dl>
+							<dl class="profile_content_definition">
+								<! -プロフィールのリスト ->
+								<dt class="profile_content_title">
+									<! - 定義名 身長、誕生日など->
+									年齢
+								</dt>
+								<dd class="profile_content_detail">
+									<! - 定義内容　100cm、8月など ->
+									20
+								</dd>
+							</dl>
+							<dl class="profile_content_definition">
+								<! -プロフィールのリスト ->
+								<dt class="profile_content_title">
+									<! - 定義名 身長、誕生日など->
+									夢
+								</dt>
+								<dd class="profile_content_detail">
+									<! - 定義内容　100cm、8月など ->
+								</dd>
+							</dl>
+						</div>
+						<div class="profile_content_data">
+							<dl class="profile_content_definition">
+								<! -プロフィールのリスト ->
+								<dt class="profile_content_title">
+									<! - 定義名 身長、誕生日など->
+									好きなこと
+								</dt>
+								<dd class="profile_content_detail">
+									<! - 定義内容　100cm、8月など ->
+								</dd>
+							</dl>
+							<dl class="profile_content_definition">
+								<! -プロフィールのリスト ->
+								<dt class="profile_content_title">
+									<! - 定義名 身長、誕生日など->
+									特技
+								</dt>
+								<dd class="profile_content_detail">
+									<! - 定義内容　100cm、8月など ->
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="pr"></section>
+			<section id="exp">
+				<h2 class="exp_title">EXP</h2>
+				<ul class="timeline">
+					<li>
+						<p class="timeline-date">2007年2月</p>
+						<div class="timeline-content">
+							<h3>カナダでワーキングホリデー</h3>
+							<p>
+								ワーホリビザで渡加。アクセサリーショップ等でバイト。カナダ生活を満喫。
+							</p>
+						</div>
+					</li>
+					<li>
+						<p class="timeline-date">2008年3月</p>
+						<div class="timeline-content">
+							<h3>Webの専門学校に入学</h3>
+							<p>
+								有給インターンシップ付きの一年プログラムを受講。HTML、CSS、JavaScript、PHP等のコーディングやWebデザインの基礎を学ぶ。
+							</p>
+						</div>
+					</li>
+					<li>
+						<p class="timeline-date">2009年2月</p>
+						<div class="timeline-content">
+							<h3>バンクーバーのWeb制作会社でWebデザイナーとして働く</h3>
+							<p>
+								私以外全員カナダ人という環境で英語やWebの技術を学びながら必死に働く
+							</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section id="works"></section>
+		</main>
+		<footer id="contact">
+			<h2 class="sub-title">CONTACT</h2>
+			<p>sikimori1508@gmail.com</p>
+			<p>@yuzutech11</p>
+		</footer>
 	</body>
 </html>
