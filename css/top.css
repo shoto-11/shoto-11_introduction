@@ -2,21 +2,24 @@
     padding:30px;
     display: inline;
 }
-
+.top_background_img{
+    overflow: hidden;
+    width: 100%;
+}
 .top_background_img>img{
     z-index: -1;
     position: absolute;
     top:0px;
-
+    max-height: 780px;
     width: 100%;
-    height: 100%;
     object-fit: cover;
-    display: block;
+    overflow: hidden;
 }
 #top_inner{
     display: flex;
     margin:30px;
     margin-top: 100px;
+    margin-bottom: 100px;
     padding-top: 100px;
     padding-bottom: 100px;
     font-size: clamp(21px, 1.01563vw, 16px);
