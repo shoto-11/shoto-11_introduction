@@ -1,0 +1,13 @@
+#contact{
+    text-align: center;
+    padding: 20px;
+    background-color: aliceblue;
+
+}
+
+#contact>p>img{
+    vertical-align: middle;
+    width: 40px;
+    height: auto;
+    margin-right: 15px;
+}

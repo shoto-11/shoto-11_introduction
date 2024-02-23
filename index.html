@@ -2,12 +2,19 @@
 <html lang="ja">
 	<head>
 		<meta charset="UTF-8" />
+		<link rel="icon" type="image/png" href="img/icon.png">
+		<link rel="apple-touch-icon" href="img/icon.png">
 		<link rel="stylesheet" href="css/index.css" />
-		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/top.css" />
+		<link rel="stylesheet" href="css/profile.css" />
+		<link rel="stylesheet" href="css/pr.css" />
+		<link rel="stylesheet" href="css/about.css" />
+		<link rel="stylesheet" href="css/works.css" />
+		<link rel="stylesheet" href="css/contact.css" />
 		<title>Shogo's profile</title>
 	</head>
 	<body>
-		<header class="header" style="top: 845.453px; left: 0px">
+		<header class="header" >
 			<div class="header_innner">
 				<ul class="headerNavLists">
 					<li class="headerNavLists_item">
@@ -23,14 +30,8 @@
 						/
 					</li>
 					<li class="headerNavLists_item">
-						<a href="#pr">
-							<span class="headerNavLists_text">PR</span>
-						</a>
-						/
-					</li>
-					<li class="headerNavLists_item">
-						<a href="#exp">
-							<span class="headerNavLists_text">EXP</span>
+						<a href="#about">
+							<span class="headerNavLists_text">ABOUT</span>
 						</a>
 						/
 					</li>
@@ -44,56 +45,53 @@
 						<a href="#contact">
 							<span class="headerNavLists_text">CONTACT</span>
 						</a>
-						/
 					</li>
 				</ul>
 			</div>
 		</header>
 		<main class="fullwrap">
 			<section id="top">
-				<section class="top_info">
-					<h1 class="top_name">森田尚吾</h1>
-					<div class="top_data">
-						東京工業大学<br />
-						情報理工学院 情報工学系 学士2年<br />
+				<div class="top_background_img">
+					<img src="img/top/top_background.png" alt="トップ画像">
+				</div>
+				<div id="top_inner">
+					<section class="top_info">
+						<h1 class="top_name">森田 尚吾</h1>
+						<div class="top_data">
+							東京工業大学<br />
+							情報理工学院 情報工学系 学士2年<br />
+						</div>
+						<ul class="top_socials">
+							<li class="top_social">
+								<a href="https://twitter.com/yuzutech11" target="_brank">
+									<img src="img/top/x.png" alt="Twitter" loading="lazy" />
+								</a>
+							</li>
+							<li class="top_social">
+								<a
+									href="https://www.youtube.com/channel/UCdcOsfdctx1e9D_TDVMXSRQ"
+									target="_brank"
+								>
+									<img src="img/top/youtube.png" alt="Youtube" loading="lazy" />
+								</a>
+							</li>
+							<li class="top_social">
+								<a href="https://github.com/shoto-11" target="_brank">
+									<img src="img/top/github.png" alt="github" loading="lazy" />
+								</a>
+							</li>
+						</ul>
+					</section>
+					<div class="top_img">
+						<img src="img/top/my_icon.JPG" alt="myicon" loading="lazy" />
 					</div>
-					<ul class="top_socials">
-						<li class="top_social">
-							<a href="https://twitter.com/yuzutech11" target="_brank">
-								<img src="img/top/x.png" alt="Twitter" loading="lazy" />
-							</a>
-						</li>
-						<li class="top_social">
-							<a
-								href="https://www.youtube.com/channel/UCdcOsfdctx1e9D_TDVMXSRQ"
-								target="_brank"
-							>
-								<img src="img/top/youtube.png" alt="Youtube" loading="lazy" />
-							</a>
-						</li>
-						<li class="top_social">
-							<a href="https://github.com/shoto-11" target="_brank">
-								<img src="img/top/github.png" alt="github" loading="lazy" />
-							</a>
-						</li>
-					</ul>
-				</section>
-				<div class="top_img">
-					<img src="/img/top/myicon.png" alt="myicon" loading="lazy" />
 				</div>
 			</section>
 			<section id="profile">
-				<h2 class="profile_title">PROFILE</h2>
+				<h2 class="profile_title">
+					<span class="profile_title--main">PROFILE</span>
+				<span class="profile_title--sub">ー プロフィール</span></h2>
 				<div class="profile_content">
-					<! –ここに右下の画像を入れる
-          @media only screen and (min-width: 1281px) {
-            .o-profileData__content {
-                background-image:url(../images/top/bg_miko_01.png);
-                background-position: bottom right;
-                background-repeat: no-repeat;
-                background-size: clamp(189px, 25vw, 589px) auto
-            }
-        } ->
 					<div class="profile_content_rows">
 						<div class="profile_content_data">
 							<dl class="profile_content_definition">
@@ -104,7 +102,7 @@
 								</dt>
 								<dd class="profile_content_detail">
 									<! - 定義内容　100cm、8月など ->
-									森田尚吾
+									森田 尚吾
 								</dd>
 							</dl>
 							<dl class="profile_content_definition">
@@ -133,11 +131,11 @@
 								<! -プロフィールのリスト ->
 								<dt class="profile_content_title">
 									<! - 定義名 身長、誕生日など->
-									年齢
+									ペンネーム
 								</dt>
 								<dd class="profile_content_detail">
 									<! - 定義内容　100cm、8月など ->
-									20
+									ショウト
 								</dd>
 							</dl>
 							<dl class="profile_content_definition">
@@ -148,6 +146,7 @@
 								</dt>
 								<dd class="profile_content_detail">
 									<! - 定義内容　100cm、8月など ->
+									一人でも多くの人を楽しませられるようなエンタメを作っていきたい！
 								</dd>
 							</dl>
 						</div>
@@ -156,65 +155,273 @@
 								<! -プロフィールのリスト ->
 								<dt class="profile_content_title">
 									<! - 定義名 身長、誕生日など->
-									好きなこと
+									好きなもの
 								</dt>
 								<dd class="profile_content_detail">
 									<! - 定義内容　100cm、8月など ->
+									茶碗蒸し、みかん　etc.<br>
+									温泉、スポーツ、アニメ鑑賞<br>
+									ロジクール商品、macbook、Adobe<br>
 								</dd>
 							</dl>
 							<dl class="profile_content_definition">
 								<! -プロフィールのリスト ->
 								<dt class="profile_content_title">
 									<! - 定義名 身長、誕生日など->
-									特技
+									興味・関心
 								</dt>
 								<dd class="profile_content_detail">
 									<! - 定義内容　100cm、8月など ->
+									コンピュータビジョン<br>
+									VR・AR<br>
+									3DCG、映像編集<br>
+								</dd>
+							</dl>
+							<dl class="profile_content_definition">
+								<! -プロフィールのリスト ->
+								<dt class="profile_content_title">
+									<! - 定義名 身長、誕生日など->
+									資格
+								</dt>
+								<dd class="profile_content_detail">
+									<! - 定義内容　100cm、8月など ->
+									英検2級<br>
+									普通自動車免許
 								</dd>
 							</dl>
 						</div>
 					</div>
+					<div class="profile_img">
+						<img src="img/profile/mayusii.jpeg" alt = "まゆしいの">
+					</div>
 				</div>
 			</section>
-			<section id="pr"></section>
-			<section id="exp">
-				<h2 class="exp_title">EXP</h2>
-				<ul class="timeline">
-					<li>
-						<p class="timeline-date">2007年2月</p>
-						<div class="timeline-content">
-							<h3>カナダでワーキングホリデー</h3>
-							<p>
-								ワーホリビザで渡加。アクセサリーショップ等でバイト。カナダ生活を満喫。
-							</p>
-						</div>
-					</li>
-					<li>
-						<p class="timeline-date">2008年3月</p>
-						<div class="timeline-content">
-							<h3>Webの専門学校に入学</h3>
-							<p>
-								有給インターンシップ付きの一年プログラムを受講。HTML、CSS、JavaScript、PHP等のコーディングやWebデザインの基礎を学ぶ。
-							</p>
-						</div>
-					</li>
-					<li>
-						<p class="timeline-date">2009年2月</p>
-						<div class="timeline-content">
-							<h3>バンクーバーのWeb制作会社でWebデザイナーとして働く</h3>
-							<p>
-								私以外全員カナダ人という環境で英語やWebの技術を学びながら必死に働く
-							</p>
-						</div>
-					</li>
-				</ul>
+			<section id="about">
+				<div class="c-innner">
+					<h2 class="about_title">ABOUT</h2>
+					<ul class="timeline_lists">
+						<li class="timeline_list">
+							<a class="timeline_link" href="https://www.titech.ac.jp/">
+								<figure class="timeline_thumb">
+									<p class="timeline_img">
+										<img src="img/exp/titech_logo.png" alt="Exp_image" loading="lazy">
+									</p>
+								</figure>
+								<div class="timeline_detail">
+									<time class="timeline_date">2022年4月1日~</time>
+									<p class="timeline_content">
+										<div class="timeline_subtitle">
+										東京工業大学 学士課程
+										</div>
+										<div class="timeline_text">
+											情報理工学院 情報工学系<br>
+											サークル：工大祭実行委員会 jizi
+										</div>
+									</p>
+								</div>
+							</a>
+						</li>
+						<li class="timeline_list">
+							<a class="timeline_link" href="https://www.hiroogakuen.ed.jp/">
+								<figure class="timeline_thumb">
+									<p class="timeline_img">
+										<img src="img/exp/hiroo_logo.gif" alt="Exp_image" loading="lazy">
+									</p>
+								</figure>
+								<div class="timeline_detail">
+									<time class="timeline_date">2016年4月1日~2022年3月31日</time>
+									<p class="timeline_content">
+										<div class="timeline_subtitle">
+										広尾学園中学校・高等学校
+										</div>
+										<div class="timeline_text">
+										部活：クッキングクラフト部<br>
+										生徒会：会計
+										</div>
+									</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</section>
-			<section id="works"></section>
+			<section id="works">
+				<h2 class="works_title">WORKS</h2>
+				<div class="works_content">
+					<h2 class="works_sub_title">WEB SITE</h2>
+					<ul class="works-lists">
+						<li class="works_list">
+							<a class="works_link" href="https://shoto-11.github.io/lec/">
+								<figure class="works_thumb">
+									<p class="works_img">
+										<img src="img/works/lec_screen.png" alt="works_image" loading="lazy">
+									</p>
+								</figure>
+								<div class="c-card_detail">
+									<ul class="c-card_categories">
+										<li class="c-card_category">
+											HTML
+										</li>
+										<li class="c-card_category">
+											CSS
+										</li>
+										<li class="c-card_category">
+											JAVASCRIPT
+										</li>
+									</ul>
+									<div class="c-card_title">Lecture room in titech</div>
+									<div class="c-card_time">
+										<time class="c-card_time_content">作成日 : 2022年9月</time>
+									</div>
+								</div>
+							</a>
+							<a class="works_link" href="https://shoto-11.github.io/num.io/">
+								<figure class="works_thumb">
+									<p class="works_img">
+										<img src="img/works/2048_screen.png" alt="works_image" loading="lazy">
+									</p>
+								</figure>
+								<div class="c-card_detail">
+									<ul class="c-card_categories">
+										<li class="c-card_category">
+											HTML
+										</li>
+										<li class="c-card_category">
+											CSS
+										</li>
+										<li class="c-card_category">
+											JAVASCRIPT
+										</li>
+									</ul>
+									<div class="c-card_title">2048 Battle Game</div>
+									<div class="c-card_time">
+										<time class="c-card_time_content">作成日 : 2020年3月</time>
+									</div>
+								</div>
+							</a>
+							<a class="works_link" href="https://shoto-11.github.io/8pazuru/">
+								<figure class="works_thumb">
+									<p class="works_img">
+										<img src="img/works/8pazuru_screen.png" alt="works_image" loading="lazy">
+									</p>
+								</figure>
+								<div class="c-card_detail">
+									<ul class="c-card_categories">
+										<li class="c-card_category">
+											HTML
+										</li>
+										<li class="c-card_category">
+											CSS
+										</li>
+										<li class="c-card_category">
+											JAVASCRIPT
+										</li>
+									</ul>
+									<div class="c-card_title">8 pazuru</div>
+									<div class="c-card_time">
+										<time class="c-card_time_content">作成日 : 2020年2月</time>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="works_content">
+					<h2 class="works_sub_title">MOVIE</h2>
+					<ul class="works-lists">
+						<li class="works_list">
+							<a class="works_link" href="https://www.youtube.com/watch?v=n08eFHFsv2s">
+								<figure class="works_thumb">
+									<p class="works_img">
+										<img src="img/works/sos_screen.png" alt="works_image" loading="lazy">
+									</p>
+								</figure>
+								<div class="c-card_detail">
+									<ul class="c-card_categories">
+										<li class="c-card_category">
+											AFTEREFFECTS
+										</li>
+										<li class="c-card_category">
+											PHOTOSHOP
+										</li>
+									</ul>
+									<div class="c-card_title">【シャニマス】SOS♡中野二乃<br>(cover 星川サラ)</div>
+									<div class="c-card_time">
+										<time class="c-card_time_content">作成日 : 2023年5月</time>
+									</div>
+								</div>
+							</a>
+							<a class="works_link" href="https://www.youtube.com/shorts/TVkVhpPk6bc">
+								<figure class="works_thumb">
+									<p class="works_img">
+										<img src="img/works/umaru_screen.png" alt="works_image" loading="lazy">
+									</p>
+								</figure>
+								<div class="c-card_detail">
+									<ul class="c-card_categories">
+										<li class="c-card_category">
+											Blender
+										</li>
+										<li class="c-card_category">
+											PHOTOSHOP
+										</li>
+									</ul>
+									<div class="c-card_title">俺のうまるがリアルすぎる件について</div>
+									<div class="c-card_time">
+										<time class="c-card_time_content">作成日 : 2021年11月</time>
+									</div>
+								</div>
+							</a>
+							<a class="works_link" href="https://www.youtube.com/watch?v=cS3Ua-Om-xs">
+								<figure class="works_thumb">
+									<p class="works_img">
+										<img src="img/works/sao_screen.webp" alt="works_image" loading="lazy">
+									</p>
+								</figure>
+								<div class="c-card_detail">
+									<ul class="c-card_categories">
+										<li class="c-card_category">
+											Blender
+										</li>
+									</ul>
+									<div class="c-card_title">SAO MENU </div>
+									<div class="c-card_time">
+										<time class="c-card_time_content">作成日 : 2021年2月</time>
+									</div>
+								</div>
+							</a>
+							<a class="works_link" href="https://www.youtube.com/watch?v=3nAZDIRPXL0">
+								<figure class="works_thumb">
+									<p class="works_img">
+										<img src="img/works/papagiki_screen.webp" alt="works_image" loading="lazy">
+									</p>
+								</figure>
+								<div class="c-card_detail">
+									<ul class="c-card_categories">
+										<li class="c-card_category">
+											PHOTOSHOP
+										</li>
+									</ul>
+									<div class="c-card_title">パパの言うことを聞きなさい！<br>op 作ってみた</div>
+									<div class="c-card_time">
+										<time class="c-card_time_content">作成日 : 2019年11月</time>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
 		</main>
 		<footer id="contact">
 			<h2 class="sub-title">CONTACT</h2>
-			<p>sikimori1508@gmail.com</p>
-			<p>@yuzutech11</p>
+			<p><img src="img/contact/gmail.png" alt="Twitter" loading="lazy" />sikimori1508@gmail.com</p>
+			<p><img src="img/contact/x.png" alt="Twitter" loading="lazy" />@yuzutech11</p>
 		</footer>
+		<script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous"></script>
+		<script src="js/index.js"></script>
 	</body>
 </html>

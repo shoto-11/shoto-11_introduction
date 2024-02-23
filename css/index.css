@@ -1,11 +1,72 @@
-li{
-    list-style:none
+body{
+    margin :0px;
+    font-family:serif; 
 }
 
-ul{
-    padding-left:0;
+
+.header{
+    height: 70px;/*高さ指定*/
+    width: 100%;/*横幅指定*/
+    /*以下はレイアウトのためのCSS*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#333;
+    color:#fff;
+    text-align: center;
+    position:fixed;
+    z-index: 1;
+  }
+
+/*JSを使いfixedクラスが付与された際の設定*/
+.header.fixed{
+    position: fixed;/*fixedを設定して固定*/
+    z-index: 999;/*最前面へ*/
+    top:0;/*位置指定*/
+    left:0;/*位置指定*/
 }
-.top_socials li a img{
-    height: auto;
-    width: 42px;
+
+  
+li{
+    list-style:none;
+}
+
+.headerNavLists
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 18px;
+}
+.headerNavLists_item>a{
+    text-decoration:none;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    transition: 0.3s;
+}
+.headerNavLists_item>a:hover{
+    align-items: center;
+    color:rgb(157, 35, 188);
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.fullwrap{
+    
+    font-family: "游ゴシック","Arial", "メイリオ";
+    font-size: clamp(15px, 1.01563vw, 16px);
+    line-height: 1.6;
+    font-weight: 400;
+    color: var(--text_color);
+    letter-spacing: 0.15em;
+  
+}
+:root{
+    --main_color: rgb(81, 146, 232);
+    --text_color:#5f4d52;
+    --text_color_02:#ffffff;
+    --time:0.5s;
 }
