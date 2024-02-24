@@ -60,4 +60,6 @@
 .top_img > img {
 	width: 300px;
 	height: auto;
+	border-radius: 40px;
+	border: 4px solid var(--main_color);
 }
