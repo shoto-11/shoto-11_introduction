@@ -1,36 +1,27 @@
-#about{
-    padding-top: 50px;
+#about {
+	padding-top: 50px;
 }
-.c-innner{
-    padding-left: 3em;
-    padding-right: 5em;
-}
-.about_title{
-    font-size: 3em;
-    font-weight: 800;
-    line-height: 0.0;
-    padding-left: 80px;
+.c-inner {
+	padding-right: 20%;
 }
 .timeline_lists {
 	display: grid;
 	gap: 2em;
 	width: 100%;
-    padding-top: 60px;
-    padding-left: 60px;
-    padding-top: 20px;
-    
+	padding-left: 12%;
+	margin-right: 12%;
+	padding-top: 20px;
 }
 .timeline_link {
 	display: flex;
 	gap: 2em;
 	align-items: center;
-    border-bottom: 2px dotted rgba(95,77,82,0.1);
-    text-decoration: none;
-    color: var(--text_color);
+	border-bottom: 2px dotted rgba(95, 77, 82, 0.1);
+	text-decoration: none;
+	color: var(--text_color);
 }
 .timeline_thumb {
 	margin-top: 0px;
-    
 }
 .timeline_img {
 	position: relative;
@@ -38,9 +29,9 @@
 	width: 180px;
 	height: 180px;
 	border: 1px solid #ddd;
-    z-index: -1;
-    overflow:hidden;
-    border-radius: 20px;
+	z-index: -1;
+	overflow: hidden;
+	border-radius: 20px;
 }
 .timeline_img > img {
 	position: absolute;
@@ -53,22 +44,22 @@
 	object-fit: cover;
 }
 
-.timeline_date{
-    font-size: clamp(.75em, 2vw, .875em);
+.timeline_date {
+	font-size: clamp(0.75em, 2vw, 0.875em);
 }
-.timeline_subtitle{
-    font-size: clamp(25px, 1.01563vw, 16px);
-    font-weight: 800;
-    color: var(--main_color);
+.timeline_subtitle {
+	font-size: clamp(25px, 1.01563vw, 16px);
+	font-weight: 800;
+	color: var(--main_color);
 }
 @media (hover: hover) {
-    .timeline_link[href]:hover .timeline_thumb img {
-        -webkit-transform:scale(1.1);
-        transform: scale(1.1);
-    }
+	.timeline_link[href]:hover .timeline_thumb img {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
 }
 .timeline_thumb img {
-    transition: -webkit-transform var(--time);
-    transition: transform var(--time);
-    transition: transform var(--time), -webkit-transform var(--time);
+	transition: -webkit-transform var(--time);
+	transition: transform var(--time);
+	transition: transform var(--time), -webkit-transform var(--time);
 }
