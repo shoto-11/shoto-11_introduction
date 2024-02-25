@@ -59,9 +59,24 @@ li {
 	color: var(--text_color);
 	letter-spacing: 0.15em;
 }
+.item_title {
+	font-size: 3em;
+	font-weight: 800;
+	line-height: 0;
+	padding-left: 120px;
+}
+.item_title--sub {
+	font-size: 0.5em;
+	font-weight: 700;
+	line-height: 0;
+}
 :root {
 	--main_color: rgb(81, 146, 232);
 	--text_color: #5f4d52;
 	--text_color_02: #ffffff;
 	--time: 0.5s;
+	--background_color_blue:rgb(76, 223, 223);
+	--background_color_pink:rgb(244, 177, 187);
+	--background_bar_color_pink:rgb(255, 235, 238);
+	--background_bar_color_blue:aliceblue;
 }
