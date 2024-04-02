@@ -95,5 +95,14 @@ $(function () {
 				});
 			}
 		});
+		$(".fadeInUp ").each(function () {
+			//フェードインさせたい要素の縦位置を取得
+			var elemPos = $(this).offset().top;
+			
+			//要素がウィンドウの中に入ってからさらに0pxスクロールしたら要素をフェードインする
+			if (scroll > elemPos - windowHeight + 0) {
+				$(this).addClass("fadeIn");
+			}
+		});
 	});
 });
