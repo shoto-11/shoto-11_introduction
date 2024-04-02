@@ -59,6 +59,7 @@
 .top_socials > li > a > img {
 	height: 42px;
 	width: auto;
+	transition: 0.1s ease-out;
 }
 .top_socials > li > a > img:hover {
 	margin-top: 3px;
