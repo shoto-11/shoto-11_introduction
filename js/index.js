@@ -66,18 +66,17 @@ $(".works_list").draggable();
 
 //website 左からスライド
 $(function () {
+	//フェードインさせたい要素の位置をずらす
+	$(".isPlay_l").css({
+		opacity: "0",
+		transform: "translateX(-100px)",
+	});
+	$(".isPlay_r").css({
+		opacity: "0",
+		transform: "translateX(100px)",
+	});
 	//画面をスクロールするとイベントが発動する
 	$(window).scroll(function () {
-		//フェードインさせたい要素の位置をずらす
-		$(".isPlay_l").css({
-			opacity: "0",
-			transform: "translateX(-100px)",
-		});
-		$(".isPlay_r").css({
-			opacity: "0",
-			transform: "translateX(100px)",
-		});
-
 		//スクロールバーの位置を取得
 		var scroll = $(window).scrollTop();
 
