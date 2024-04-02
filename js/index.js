@@ -24,7 +24,7 @@ $(function () {
 	$(".slider").slick({
 		autoplay: true, //自動でスライドさせる
 		autoplaySpeed: 0, //次の画像に切り替えるまでの時間 今回の場合は0
-		speed: 30000, //画像が切り替わるまでの時間 今回の場合は難病で1枚分動くか
+		speed: 40000, //画像が切り替わるまでの時間 今回の場合は難病で1枚分動くか
 		cssEase: "linear", //動きの種類は等速に
 		arrows: false, //左右に出る矢印を非表示
 		swipe: false, //スワイプ禁止
