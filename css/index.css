@@ -10,8 +10,8 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: #333;
-	color: #fff;
+	background: #ffffff;
+	color: #2e2e2e;
 	text-align: center;
 	position: fixed;
 	z-index: 1;
@@ -24,7 +24,13 @@ body {
 	top: 0; /*位置指定*/
 	left: 0; /*位置指定*/
 }
-
+.header_innner {
+	width: 100%;
+	justify-content: space-between;
+	padding: 17px 40px;
+	align-items: center;
+	display: flex;
+}
 li {
 	list-style: none;
 }
@@ -33,13 +39,11 @@ li {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: flex-end;
-	margin-right: 18px;
 }
 .headerNavLists_item > a {
 	text-decoration: none;
 	align-items: center;
-	color: rgb(255, 255, 255);
+	color: rgb(88, 88, 88);
 	padding: 10px;
 	transition: 0.3s;
 }
@@ -50,7 +54,10 @@ li {
 	font-weight: bold;
 	transition: 0.3s;
 }
-
+.logo > a > img {
+	width: 61.2px;
+	height: auto;
+}
 .fullwrap {
 	font-family: "游ゴシック", "Arial", "メイリオ";
 	font-size: clamp(15px, 1.01563vw, 16px);
@@ -75,8 +82,8 @@ li {
 	--text_color: #5f4d52;
 	--text_color_02: #ffffff;
 	--time: 0.5s;
-	--background_color_blue:rgb(76, 223, 223);
-	--background_color_pink:rgb(244, 177, 187);
-	--background_bar_color_pink:rgb(255, 235, 238);
-	--background_bar_color_blue:aliceblue;
+	--background_color_blue: rgb(76, 223, 223);
+	--background_color_pink: rgb(244, 177, 187);
+	--background_bar_color_pink: rgb(255, 235, 238);
+	--background_bar_color_blue: aliceblue;
 }

@@ -19,6 +19,21 @@ $(".headerNavLists_item>a").click(function () {
 	return false; //リンクの無効化
 });
 
+//スライダー文字
+$(function () {
+	$(".slider").slick({
+		autoplay: true, //自動でスライドさせる
+		autoplaySpeed: 0, //次の画像に切り替えるまでの時間 今回の場合は0
+		speed: 30000, //画像が切り替わるまでの時間 今回の場合は難病で1枚分動くか
+		cssEase: "linear", //動きの種類は等速に
+		arrows: false, //左右に出る矢印を非表示
+		swipe: false, //スワイプ禁止
+		pauseOnFocus: false, //フォーカスが合っても止めない
+		pauseOnHover: false, //hoverしても止めない
+		variableWidth: true, //スライドの要素の幅をcssで設定できるようにする
+	});
+});
+
 //worksの横スライド
 $.prototype.draggable = function () {
 	var t;
@@ -48,3 +63,38 @@ $.prototype.draggable = function () {
 		});
 };
 $(".works_list").draggable();
+
+//website 左からスライド
+$(function () {
+	//画面をスクロールするとイベントが発動する
+	$(window).scroll(function () {
+		//フェードインさせたい要素の位置をずらす
+		$(".isPlay_l").css({
+			opacity: "0",
+			transform: "translateX(-100px)",
+		});
+		$(".isPlay_r").css({
+			opacity: "0",
+			transform: "translateX(100px)",
+		});
+
+		//スクロールバーの位置を取得
+		var scroll = $(window).scrollTop();
+
+		//ウィンドウの高さを取得
+		var windowHeight = $(window).height();
+
+		$(".isPlay_l,.isPlay_r ").each(function () {
+			//フェードインさせたい要素の縦位置を取得
+			var elemPos = $(this).offset().top;
+
+			//要素がウィンドウの中に入ってからさらに100pxスクロールしたら要素をフェードインする
+			if (scroll > elemPos - windowHeight + 200) {
+				$(this).css({
+					opacity: "1",
+					transform: "translateX(0)",
+				});
+			}
+		});
+	});
+});
