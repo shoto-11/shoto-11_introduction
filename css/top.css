@@ -73,8 +73,11 @@
 }
 
 .slider {
-	padding-top: 50px;
 	line-height: 0;
 	font-size: 0;
+	overflow-x: hidden;
+}
+.slider-top {
+	padding-top: 50px;
 	opacity: 20%;
 }

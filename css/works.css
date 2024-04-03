@@ -160,3 +160,22 @@
 	transition: transform var(--time);
 	transition: transform var(--time), -webkit-transform var(--time);
 }
+.slider-down {
+	padding-bottom: 10px;
+}
+.slider-down img {
+	border-radius: 10px;
+	width: 24vw;
+}
+.slider-down .img{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.slider-down .img .rr {
+	transform: rotate(3deg);
+	margin: 0 2vw 3vw;
+}
+.slider-down .img .rl {
+	transform: rotate(-3deg);
+	margin: 3vw 2vw 0;
+}

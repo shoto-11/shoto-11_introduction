@@ -59,7 +59,6 @@
 	}
 }
 .timeline_thumb img {
-	transition: -webkit-transform var(--time);
-	transition: transform var(--time);
-	transition: transform var(--time), -webkit-transform var(--time);
+	transition: -webkit-transform var(--time) ease;
+	transition: transform var(--time) ease;
 }
