@@ -33,6 +33,36 @@ $(function () {
 		variableWidth: true, //スライドの要素の幅をcssで設定できるようにする
 	});
 });
+//年齢自動計算
+const birthday = {
+	year: 2003,
+	month: 8,
+	date: 15,
+};
+
+function getAge(birthday) {
+	//今日
+	var today = new Date();
+
+	//今年の誕生日
+	var thisYearsBirthday = new Date(
+		today.getFullYear(),
+		birthday.month - 1,
+		birthday.date
+	);
+
+	//年齢
+	var age = today.getFullYear() - birthday.year;
+
+	if (today < thisYearsBirthday) {
+		//今年まだ誕生日が来ていない
+		age--;
+	}
+
+	return age;
+}
+
+document.getElementById("birthday_age").textContent = getAge(birthday);
 
 //worksの横スライド
 $.prototype.draggable = function () {
@@ -98,7 +128,7 @@ $(function () {
 		$(".fadeInUp ").each(function () {
 			//フェードインさせたい要素の縦位置を取得
 			var elemPos = $(this).offset().top;
-			
+
 			//要素がウィンドウの中に入ってからさらに0pxスクロールしたら要素をフェードインする
 			if (scroll > elemPos - windowHeight + 0) {
 				$(this).addClass("fadeIn");
