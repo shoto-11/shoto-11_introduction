@@ -79,22 +79,22 @@ li {
 }
 
 .fadeInUp {
-    opacity: 0;
-    transform: translateY(50px);
+	opacity: 0;
+	transform: translateY(50px);
 }
 /* フェードインアニメーション */
 @keyframes fadeIn {
-    0% {
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
+	0% {
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
 }
 .fadeIn {
-    animation-name: fadeIn;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+	animation-name: fadeIn;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
 }
 
 :root {
@@ -104,6 +104,9 @@ li {
 	--time: 0.5s;
 	--background_color_blue: rgb(76, 223, 223);
 	--background_color_pink: rgb(244, 177, 187);
+	--background_color_gray: rgb(195, 195, 195);
+	--background_color_orange: rgb(240, 188, 135);
 	--background_bar_color_pink: rgb(255, 235, 238);
 	--background_bar_color_blue: aliceblue;
+	--background_bar_color_gray: rgb(228, 228, 228);
 }

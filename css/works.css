@@ -24,6 +24,18 @@
 		var(--background_color_pink) 2px
 	);
 }
+.gray_back {
+	background-image: radial-gradient(
+		white 2px,
+		var(--background_color_gray) 2px
+	);
+}
+.orange_back {
+	background-image: radial-gradient(
+		white 2px,
+		var(--background_color_orange) 2px
+	);
+}
 .works_sub_title {
 	font-size: 2em;
 	font-weight: 800;
@@ -72,6 +84,9 @@
 }
 .pink_bar:before {
 	background-color: var(--background_bar_color_pink);
+}
+.gray_bar:before {
+	background-color: var(--background_bar_color_gray);
 }
 .works_list {
 	z-index: -1;
